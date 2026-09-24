@@ -1,0 +1,53 @@
+# ---- Python ----
+__pycache__/
+*.py[codz]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- Entornos virtuales ----
+.venv/
+venv/
+env/
+
+# ---- Logs de instalación ----
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---- Resultados / artefactos generados ----
+*.pdf
+*.docx
+*.pptx
+*.txt
+*.png
+/docs/*
+
+# ---- Datasets ----
+*.csv
+*.xlsx
+*.xls
+
+# ---- Carpetas de datos y modelos (pesadas / regenerables) ----
+# data/ se ignora entera EXCEPTO el registro curado de incidencias de calidad
+# (etiquetas de defecto mantenidas a mano; deben versionarse).
+/data/*
+!/data/raw/
+/data/raw/*
+!/data/raw/incidencias_calidad.csv
+/models/
+/tar.gz
+
+# ---- IDE / SO ----
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# ---- Excepciones: sí queremos versionar estos ----
+!requirements.txt
+!docs/*.txt
+
+
+# Carpeta de códigos de pruebas
+/scratch
+
